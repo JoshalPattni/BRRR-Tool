@@ -13,10 +13,10 @@ function calculateROI() {
     var recommendation = document.getElementById("recommendation");
     if (roi >= 7 || capRate >= 7) {
         recommendation.innerText = "This is a good investment opportunity.";
-        recommendation.style.color = "green";
+        recommendation.style.color = "#4CAF50";
     } else {
         recommendation.innerText = "This may not be the best investment opportunity.";
-        recommendation.style.color = "red";
+        recommendation.style.color = "#f44336";
     }
 
     // Show results
