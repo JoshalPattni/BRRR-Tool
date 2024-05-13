@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRRR Model Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BRRR Model Tool</h1>
+        <div id="property-info">
+            <h2>Property Information</h2>
+            <p>Enter the following details to analyze your investment opportunity.</p>
+            <label for="purchase-price">Purchase Price (£):</label>
+            <input type="number" id="purchase-price">
+            <label for="refurb-cost">Refurbishment Cost (£):</label>
+            <input type="number" id="refurb-cost">
+            <label for="arv">After Repair Value (ARV) (£):</label>
+            <input type="number" id="arv">
+            <button onclick="calculateROI()">Calculate ROI</button>
+        </div>
+        <div id="results" style="display: none;">
+            <h2>Analysis Results</h2>
+            <p>The ROI and Cap Rate are calculated based on the provided information.</p>
+            <p>ROI: <span id="roi"></span>%</p>
+            <p>Cap Rate: <span id="cap-rate"></span>%</p>
+            <p id="recommendation"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
